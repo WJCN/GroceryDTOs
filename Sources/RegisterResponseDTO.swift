@@ -8,8 +8,8 @@
 import Foundation
 
 public struct RegisterResponseDTO: Codable, Sendable {
-	public var error:  Bool
-	public var reason: String?
+	public let error:  Bool
+	public let reason: String?
 
 	public init(
 		error:  Bool,

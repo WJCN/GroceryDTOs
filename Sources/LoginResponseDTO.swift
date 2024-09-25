@@ -8,10 +8,10 @@
 import Foundation
 
 public struct LoginResponseDTO: Codable, Sendable {
-	public var error:  Bool
-	public var reason: String?
-	public var token:  String?
-	public var userID: UUID?
+	public let error:  Bool
+	public let reason: String?
+	public let token:  String?
+	public let userID: UUID?
 
 	public init(
 		error:  Bool,
