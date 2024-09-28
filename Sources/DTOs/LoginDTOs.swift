@@ -1,5 +1,5 @@
 //
-//  LoginResponseDTO.swift
+//  LoginDTOs.swift
 //
 //
 //  Created by William J. C. Nesbitt on 6/25/24.

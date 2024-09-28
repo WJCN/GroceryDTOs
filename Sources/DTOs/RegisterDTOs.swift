@@ -1,11 +1,9 @@
 //
-//  RegisterResponseDTO.swift
+//  RegisterDTOs.swift
 //
 //
 //  Created by William J. C. Nesbitt on 6/25/24.
 //
-
-import Foundation
 
 public struct RegisterResponseDTO: Codable, Sendable {
 	public let error:  Bool
