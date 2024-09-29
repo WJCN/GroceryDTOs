@@ -27,7 +27,7 @@ public struct GroceryCategoryResponseDTO: Codable, Identifiable, Sendable {
 	public var title: String
 	public var color: UInt32
 
-	init(
+	public init(
 		id:    UUID,
 		title: String,
 		color: UInt32
