@@ -22,7 +22,7 @@ public struct GroceryCategoryRequestDTO: Codable, Sendable {
 
 // MARK: -
 
-public struct GroceryCategoryResponseDTO: Codable, Identifiable, Sendable {
+public struct GroceryCategoryResponseDTO: Codable, Hashable, Identifiable, Sendable {
 	public var id:    UUID
 	public var title: String
 	public var color: String

@@ -25,7 +25,7 @@ public struct GroceryItemRequestDTO: Codable, Sendable {
 
 // MARK: -
 
-public struct GroceryItemResponseDTO: Codable, Identifiable, Sendable {
+public struct GroceryItemResponseDTO: Codable, Hashable, Identifiable, Sendable {
 	public let id:       UUID
 	public let title:    String
 	public let price:    Double
