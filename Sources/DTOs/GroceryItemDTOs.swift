@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct GroceryItemRequestDTO: Codable {
+public struct GroceryItemRequestDTO: Codable, Sendable {
 	public let title:    String
 	public let price:    Double
 	public let quantity: Int
@@ -25,7 +25,7 @@ public struct GroceryItemRequestDTO: Codable {
 
 // MARK: -
 
-public struct GroceryItemResponseDTO: Codable, Identifiable {
+public struct GroceryItemResponseDTO: Codable, Identifiable, Sendable {
 	public let id:       UUID
 	public let title:    String
 	public let price:    Double
