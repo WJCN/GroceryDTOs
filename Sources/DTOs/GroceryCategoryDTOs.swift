@@ -8,8 +8,8 @@
 import Foundation
 
 public struct GroceryCategoryRequestDTO: Codable, Sendable {
-	public var title: String
-	public var color: String
+	public let title: String
+	public let color: String
 
 	public init(
 		title: String,
