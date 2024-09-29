@@ -9,11 +9,11 @@ import Foundation
 
 public struct GroceryCategoryRequestDTO: Codable, Sendable {
 	public var title: String
-	public var color: Int
+	public var color: String
 
 	public init(
 		title: String,
-		color: Int
+		color: String
 	) {
 		self.title = title
 		self.color = color
@@ -25,12 +25,12 @@ public struct GroceryCategoryRequestDTO: Codable, Sendable {
 public struct GroceryCategoryResponseDTO: Codable, Identifiable, Sendable {
 	public var id:    UUID
 	public var title: String
-	public var color: Int
+	public var color: String
 
 	public init(
 		id:    UUID,
 		title: String,
-		color: Int
+		color: String
 	) {
 		self.id    = id
 		self.title = title
