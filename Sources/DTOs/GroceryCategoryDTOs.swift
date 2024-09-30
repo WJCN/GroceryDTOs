@@ -23,17 +23,20 @@ public struct GroceryCategoryRequestDTO: Codable, Sendable {
 // MARK: -
 
 public struct GroceryCategoryResponseDTO: Codable, Hashable, Identifiable, Sendable {
-	public var id:    UUID
-	public var title: String
-	public var color: String
+	public let id:            UUID
+	public let title:         String
+	public let color:         String
+	public let groceryItems: [GroceryItemResponseDTO]
 
 	public init(
-		id:    UUID,
-		title: String,
-		color: String
+		id:            UUID,
+		title:         String,
+		color:         String,
+		groceryItems: [GroceryItemResponseDTO] = []
 	) {
-		self.id    = id
-		self.title = title
-		self.color = color
+		self.id           = id
+		self.title        = title
+		self.color        = color
+		self.groceryItems = groceryItems
 	}
 }
