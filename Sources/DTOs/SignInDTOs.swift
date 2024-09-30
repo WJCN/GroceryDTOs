@@ -1,5 +1,5 @@
 //
-//  LoginDTOs.swift
+//  SignInResponseDTO.swift
 //  GroceryDTOs
 //
 //  Created by William J. C. Nesbitt on 6/25/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct LoginResponseDTO: Codable, Sendable {
+public struct SignInResponseDTO: Codable, Sendable {
 	public let error:  Bool
 	public let reason: String?
 	public let token:  String?
